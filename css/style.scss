@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+@mixin display($flex, $justify, $align, $wrap) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+@mixin fontDesign($size, $wei, $color) {
+  font-size: $size;
+  font-weight: $wei;
+  color: $color;
+}
+.mb_10 {
+  margin-bottom: 10px;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(10vh, auto);
+  .menu__left {
+    grid-column: 1/2;
+  }
+  header {
+    grid-column: 2/13;
+    grid-row: 1;
+  }
+  #solution {
+    grid-column: 2/13;
+    grid-row: 2;
+  }
+  #product {
+    grid-column: 2/13;
+    grid-row: 3;
+  }
+  #negotiate {
+    grid-column: 2/13;
+    grid-row: 4;
+  }
+  #update {
+    grid-column: 2/13;
+    grid-row: 5;
+  }
+  #carousel {
+    grid-column: 2/12;
+    grid-row: 6;
+  }
+  #contact {
+    grid-column: 2/12;
+    grid-row: 7;
+  }
+  footer {
+    grid-column: 2/12;
+    grid-row: 8;
+  }
+}
+
+.menu__left {
+  height: 120vh;
+  width: 100%;
+  .menu__wrapper {
+    margin-top: 20px;
+    height: 100%;
+    @include display(flex, space-between, center, none);
+    flex-direction: column;
+    .menu__btn {
+      text-align: center;
+      .menu__btn1 {
+        width: 20px;
+        height: 50px;
+        .line {
+          width: 100%;
+          height: 2px;
+          background-color: black;
+          margin: 3px 0;
+          float: right;
+          &:nth-child(1) {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .menu__social {
+      @include display(flex, space-around, none, none);
+      flex-direction: column;
+      text-align: center;
+      i {
+        margin: 5px 0;
+      }
+    }
+    .menu__vn {
+      width: 25px;
+      height: 25px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      position: relative;
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include fontDesign(12px, bold, none);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+header {
+  display: block;
+  padding: 10px 50px;
+  .header__nav {
+    @include display(flex, space-between, center, wrap);
+    .header__brand {
+      img {
+        width: 130px;
+        height: 70px;
+      }
+    }
+    .header__links {
+      width: 800px;
+      @include display(flex, space-around, center, wrap);
+      .header__item {
+        .header__link {
+          @include fontDesign(16px, 500, black);
+        }
+        .header__SignUp {
+          @include fontDesign(17px, 300, black);
+          height: 50px;
+          width: 220px;
+          background-color: yellowgreen;
+          text-align: center;
+          border: none;
+          border-radius: 5px;
+          box-shadow: -3px 3px 20px grey;
+        }
+      }
+    }
+  }
+
+  .header__main {
+    @include display(flex, space-around, center, wrap);
+    margin-top: 160px;
+    padding-bottom: 30px;
+    .header__img {
+      position: relative;
+      img {
+        width: 500px;
+        height: 400px;
+        &:nth-child(2) {
+          position: absolute;
+          width: 400px;
+          height: 350px;
+          top: -130px;
+          right: -60px;
+          transform: rotate(1deg);
+          z-index: -1;
+          opacity: 0.6;
+        }
+      }
+    }
+    .header__content {
+      width: 440px;
+      .header__text {
+        display: block;
+        h1 {
+          &:nth-child(1) {
+            @include fontDesign(40px, 300, none);
+          }
+        }
+        p {
+          margin: 20px 0;
+        }
+      }
+      .header__btnGroup {
+        margin-top: 30px;
+        @include display(flex, space-between, center, wrap);
+        .header__btn {
+          height: 50px;
+          width: 190px;
+          padding: 0 10px;
+          border: 1px solid black;
+          @include display(flex, space-around, center, none);
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+#solution {
+  display: block;
+  margin-bottom: 50px;
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .solution__container {
+    @include display(flex, space-around, center, wrap);
+    padding: 10px 50px 50px 50px;
+    .solution__wrapper {
+      width: 600px;
+      height: 500px;
+      @include display(flex, flex-start, center, wrap);
+      .solution__item {
+        margin: 20px 15px;
+        .item__container {
+          border-radius: 0 20% 0 20%;
+          @include display(flex, space-around, center, none);
+          flex-direction: column;
+          text-align: center;
+          background-color: red;
+          width: 260px;
+          padding: 20px;
+          height: 230px;
+          h4 {
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+    .solution__image {
+      width: 600px;
+      height: 500px;
+      img {
+        width: 600px;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#product {
+  text-align: center;
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .product__wrapper {
+    @include display(flex, space-around, center, wrap);
+    padding: 10px 60px 60px 60px;
+    .product__img {
+      img {
+        width: 600px;
+        height: 500px;
+        object-fit: contain;
+      }
+    }
+    .product__content {
+      width: 600px;
+      height: 500px;
+      .product__text {
+        @include display(flex, flex-start, none, none);
+        margin-left: 50px;
+        width: 400px;
+        height: 230px;
+        border-radius: 0 15px 0 15px;
+        flex-direction: column;
+        padding: 20px 50px;
+        background-color: pink;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: -25px;
+          transform: translate(0, -50%);
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: grey;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -25px;
+          transform: translate(0, -50%);
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: red;
+        }
+
+        p {
+          margin: 20px 0;
+        }
+        a {
+          color: red;
+        }
+      }
+      .product__clip {
+        img {
+          position: relative;
+          width: 400px;
+          height: 230px;
+          border-radius: 0 15px 0 15px;
+          top: -10px;
+          right: -20px;
+          //   z-index: -1;
+        }
+        .product__playBtn {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 999;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background-color: red;
+        }
+      }
+    }
+  }
+}
+
+#negotiate {
+  .negotiate__container {
+    @include display(flex, space-around, center, none);
+    padding: 10px 60px 50px 60px;
+    .negotiate__content {
+      width: 50%;
+      padding: 0 50px;
+      @include display(flex, space-around, none, none);
+      flex-direction: column;
+    }
+    .negotiate__img {
+      width: 50%;
+    }
+  }
+}
