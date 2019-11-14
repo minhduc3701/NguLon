@@ -50,7 +50,7 @@ $redColor: #b00006;
   src: url(./../font/Elle/Elle-Futura-Medium.otf) format("truetype");
 }
 .mb_35 {
-  @include fontFam(ElleMedium, 47px, none, none);
+  @include fontFam(ElleMedium, 47px, none, white);
 }
 .bbtn {
   width: 50px;
@@ -165,6 +165,14 @@ body {
 
 header {
   padding: 16px 0;
+  position: relative;
+  .header__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+  }
+
   .header__nav {
     @include display(flex, space-between, none, wrap);
     .header__brand {
@@ -180,14 +188,14 @@ header {
       @include display(flex, space-between, center, wrap);
       .header__item {
         .header__link {
-          @include fontFam(AdobeRegular, 16px, 500, black);
+          @include fontFam(AdobeRegular, 16px, 500, white);
           letter-spacing: 1px;
         }
         .header__SignUp {
-          @include fontDesign(17px, 300, black);
+          @include fontFam(AdobeBold, 18px, none, white);
           height: 50px;
           width: 226px;
-          background-color: yellowgreen;
+          background-color: white;
           text-align: center;
           border: none;
           border-radius: 5px 0 5px 5px;
@@ -224,25 +232,28 @@ header {
       .header__text {
         h1 {
           &:nth-child(2) {
-            @include fontFam(ElleHeavy, 48px, none, none);
+            @include fontFam(ElleHeavy, 48px, none, white);
           }
         }
         p {
           margin-top: 20px;
           margin-bottom: 40px;
-          @include fontFam(AdobeRegular, 18px, none, none);
+          @include fontFam(AdobeRegular, 18px, none, white);
         }
       }
       .header__btnGroup {
         @include display(flex, space-between, none, wrap);
         .header__btn {
-          @include fontFam($Popin, 12px, none, none);
+          @include fontFam($Popin, 12px, none, white);
           height: 54px;
           width: 192px;
-          border: 1px solid black;
+          border: 1px solid white;
           @include display(flex, space-around, center, none);
           border-radius: 10px;
           cursor: pointer;
+          .header__btnText {
+            margin-left: 10px;
+          }
           img {
             margin: 0 10px;
           }
