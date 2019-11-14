@@ -655,6 +655,14 @@ header .header__main .header__content .header__btnGroup .header__btn img {
 
 #negotiate {
   width: 100%;
+  position: relative;
+}
+
+#negotiate .main__bg {
+  position: absolute;
+  bottom: -968px;
+  left: 0;
+  z-index: -99;
 }
 
 #negotiate .negotiate__container {
@@ -914,6 +922,7 @@ header .header__main .header__content .header__btnGroup .header__btn img {
 
 #contact .contact__container {
   position: relative;
+  border: none;
   margin: 0 50px 0 85px;
   height: 750px;
   border-radius: 20px 0 20px 20px;
@@ -941,7 +950,7 @@ header .header__main .header__content .header__btnGroup .header__btn img {
   font-family: ElleHeavy;
   font-size: 36px;
   font-weight: none;
-  color: none;
+  color: white;
   width: 200px;
   line-height: 47px;
   padding-bottom: 37px;
@@ -951,7 +960,7 @@ header .header__main .header__content .header__btnGroup .header__btn img {
   font-family: AdobeRegular;
   font-size: 16px;
   font-weight: none;
-  color: none;
+  color: white;
   width: 55%;
   line-height: 24px;
   padding-bottom: 46px;
@@ -978,7 +987,7 @@ header .header__main .header__content .header__btnGroup .header__btn img {
   font-family: AdobeRegular;
   font-size: 16px;
   font-weight: none;
-  color: none;
+  color: white;
   padding-bottom: 15px;
 }
 
@@ -996,7 +1005,7 @@ header .header__main .header__content .header__btnGroup .header__btn img {
   font-family: AdobeRegular;
   font-size: 14px;
   font-weight: none;
-  color: none;
+  color: white;
 }
 
 #contact .contact__container .contact__form form .contact__info,
@@ -1030,7 +1039,7 @@ header .header__main .header__content .header__btnGroup .header__btn img {
   font-family: AdobeRegular;
   font-size: 14px;
   font-weight: none;
-  color: none;
+  color: white;
 }
 
 #contact .contact__container .contact__form form .contact__btn {
@@ -1142,5 +1151,264 @@ header .header__main .header__content .header__btnGroup .header__btn img {
           align-items: center;
   -ms-flex-wrap: none;
       flex-wrap: none;
+}
+
+footer {
+  margin-top: 120px;
+  margin-left: 110px;
+  padding-bottom: 273px;
+  position: relative;
+}
+
+footer a {
+  color: white;
+}
+
+footer .bg {
+  position: absolute;
+  bottom: 114px;
+  height: 183%;
+  left: -109px;
+  z-index: -99;
+}
+
+footer .footer__container {
+  width: 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer__container h4 {
+  font-family: ElleBold;
+  font-size: 18px;
+  font-weight: none;
+  color: white;
+  margin-bottom: 47px;
+  letter-spacing: -2px;
+}
+
+footer .footer__container .footer__company {
+  margin-top: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer__container .footer__company img {
+  width: 72px;
+  height: 40px;
+  margin: 2px 27px 0 -1px;
+  position: relative;
+}
+
+footer .footer__container .footer__company p {
+  width: 380px;
+  line-height: 28px;
+  font-family: AdobeRegular;
+  font-size: 16px;
+  font-weight: none;
+  color: white;
+}
+
+footer .footer__container .footer__about {
+  margin-left: 69px;
+  margin-top: 6px;
+}
+
+footer .footer__container .footer__about ul li {
+  font-family: AdobeRegular;
+  font-size: 16px;
+  font-weight: none;
+  color: white;
+  margin-bottom: 25px;
+  line-height: 13px;
+}
+
+footer .footer__container .footer__use {
+  margin-left: 42px;
+  margin-top: 6px;
+}
+
+footer .footer__container .footer__use ul li {
+  font-family: AdobeRegular;
+  font-size: 16px;
+  font-weight: none;
+  color: white;
+  margin-bottom: 25px;
+  line-height: 13px;
+}
+
+footer .footer__container .footer__use ul li:nth-child(3) {
+  margin-left: 4px;
+}
+
+footer .footer__container .footer__follow {
+  margin-left: 34px;
+  margin-top: 6px;
+  position: relative;
+}
+
+footer .footer__container .footer__follow h4 {
+  margin-top: 3px;
+  margin-bottom: 46px;
+}
+
+footer .footer__container .footer__follow .footer__info {
+  margin-left: 5px;
+}
+
+footer .footer__container .footer__follow .footer__info li {
+  font-family: AdobeRegular;
+  font-size: 16px;
+  font-weight: none;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 3px;
+}
+
+footer .footer__container .footer__follow .footer__info li span {
+  margin-right: 13px;
+}
+
+footer .footer__container .footer__follow .footer__info li span img {
+  position: relative;
+}
+
+footer .footer__container .footer__follow .footer__info li span img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+footer .footer__container .footer__follow .footer__info li:nth-child(2) span {
+  margin-right: 16px;
+}
+
+footer .footer__container .footer__follow .footer__info li:nth-child(3) span {
+  margin-right: 19px;
+}
+
+footer .footer__container .footer__follow .footer__social {
+  padding: 14px 0 0 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer__container .footer__follow .footer__social .social__icon {
+  margin-right: 8px;
+  width: 47px;
+  height: 47px;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+}
+
+footer .footer__container .footer__follow .footer__social .social__icon i {
+  font-size: 21px;
+  color: #b00006;
+}
+
+footer .footer__container .footer__follow .footer__message {
+  position: absolute;
+  bottom: -37px;
+  right: -4px;
+}
+
+footer .footer__container .footer__nav {
+  position: relative;
+  margin-top: 96px;
+  margin-left: -24px;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+}
+
+footer .footer__container .footer__nav::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+footer .footer__container .footer__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  color: white;
+}
+
+footer .footer__container .footer__nav ul li {
+  margin: 0 9px;
+  letter-spacing: -1px;
+}
+
+footer .footer__container .footer__nav ul li:nth-child(2) {
+  margin: 0 7px;
+}
+
+footer .footer__container .footer__nav ul li:nth-child(3), footer .footer__container .footer__nav ul li:nth-child(5), footer .footer__container .footer__nav ul li:nth-child(4) {
+  margin: 0 7px;
+}
+
+footer .footer__container .footer__nav p {
+  margin-top: 2px;
+  margin-right: -5px;
+  font-family: AdobeRegular;
+  font-size: 14px;
+  font-weight: none;
+  color: white;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */
