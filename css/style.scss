@@ -53,8 +53,8 @@ $redColor: #b00006;
   @include fontFam(ElleMedium, 47px, none, white);
 }
 .bbtn {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: red;
 }
@@ -495,11 +495,12 @@ header {
     .carousel__card {
       @include display(flex, flex-start, none, none);
       flex-direction: column;
-      width: 355px;
+      width: 351px;
       height: 680px;
       overflow: hidden;
       background-color: #35d4c7;
       border-radius: 15px;
+      position: relative;
       img {
         height: 223px;
         width: 100%;
@@ -507,19 +508,21 @@ header {
         margin-bottom: 35px;
       }
       .carousel__wrapper {
-        margin: 0 35px;
-        position: relative;
+        margin: 0 0 0 33px;
         h4 {
-          margin-bottom: 30px;
+          margin: 0 31px 30px 0;
           @include fontFam(AdobeBold, 24px, none, none);
         }
         p {
-          line-height: 35px;
-          height: 250px;
+          margin-right: 44px;
+          line-height: 30px;
           overflow: hidden;
-          @include fontFam(AdobeBold, 14px, none, none);
+          @include fontFam(AdobeBold, 18px, none, none);
         }
         a {
+          position: absolute;
+          bottom: 38px;
+          left: 34px;
           @include fontFam(AdobeBold, 18px, none, none);
           color: $redColor;
         }
@@ -529,16 +532,18 @@ header {
   .carousel__btn {
     width: 100%;
     @include display(flex, center, center, none);
-    .carousel__container {
+    margin-top: 48px;
+    .carousel__containdots {
+      margin-left: 25px;
       @include display(flex, space-around, center, none);
-      width: 300px;
-      height: auto;
+      width: 291px;
+      height: 89px;
       .carousel__Left,
       .carousel__Right {
         @include display(flex, center, center, none);
       }
       .carousel__dots {
-        width: 100px;
+        width: 109px;
         @include display(flex, space-between, center, none);
         .carousel__item {
           width: 10px;
@@ -555,7 +560,7 @@ header {
 }
 
 #contact {
-  margin-top: 80px;
+  margin-top: 40px;
   .contact__container {
     position: relative;
     border: none;

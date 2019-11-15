@@ -41,8 +41,8 @@
 }
 
 .bbtn {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: red;
 }
@@ -812,11 +812,12 @@ header .header__main .header__content .header__btnGroup .header__btn img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 355px;
+  width: 351px;
   height: 680px;
   overflow: hidden;
   background-color: #35d4c7;
   border-radius: 15px;
+  position: relative;
 }
 
 #carousel .carousel__container .carousel__card img {
@@ -828,12 +829,11 @@ header .header__main .header__content .header__btnGroup .header__btn img {
 }
 
 #carousel .carousel__container .carousel__card .carousel__wrapper {
-  margin: 0 35px;
-  position: relative;
+  margin: 0 0 0 33px;
 }
 
 #carousel .carousel__container .carousel__card .carousel__wrapper h4 {
-  margin-bottom: 30px;
+  margin: 0 31px 30px 0;
   font-family: AdobeBold;
   font-size: 24px;
   font-weight: none;
@@ -841,16 +841,19 @@ header .header__main .header__content .header__btnGroup .header__btn img {
 }
 
 #carousel .carousel__container .carousel__card .carousel__wrapper p {
-  line-height: 35px;
-  height: 250px;
+  margin-right: 44px;
+  line-height: 30px;
   overflow: hidden;
   font-family: AdobeBold;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: none;
   color: none;
 }
 
 #carousel .carousel__container .carousel__card .carousel__wrapper a {
+  position: absolute;
+  bottom: 38px;
+  left: 34px;
   font-family: AdobeBold;
   font-size: 18px;
   font-weight: none;
@@ -871,9 +874,11 @@ header .header__main .header__content .header__btnGroup .header__btn img {
           align-items: center;
   -ms-flex-wrap: none;
       flex-wrap: none;
+  margin-top: 48px;
 }
 
-#carousel .carousel__btn .carousel__container {
+#carousel .carousel__btn .carousel__containdots {
+  margin-left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,12 +889,12 @@ header .header__main .header__content .header__btnGroup .header__btn img {
           align-items: center;
   -ms-flex-wrap: none;
       flex-wrap: none;
-  width: 300px;
-  height: auto;
+  width: 291px;
+  height: 89px;
 }
 
-#carousel .carousel__btn .carousel__container .carousel__Left,
-#carousel .carousel__btn .carousel__container .carousel__Right {
+#carousel .carousel__btn .carousel__containdots .carousel__Left,
+#carousel .carousel__btn .carousel__containdots .carousel__Right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,8 +908,8 @@ header .header__main .header__content .header__btnGroup .header__btn img {
       flex-wrap: none;
 }
 
-#carousel .carousel__btn .carousel__container .carousel__dots {
-  width: 100px;
+#carousel .carousel__btn .carousel__containdots .carousel__dots {
+  width: 109px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -918,19 +923,19 @@ header .header__main .header__content .header__btnGroup .header__btn img {
       flex-wrap: none;
 }
 
-#carousel .carousel__btn .carousel__container .carousel__dots .carousel__item {
+#carousel .carousel__btn .carousel__containdots .carousel__dots .carousel__item {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #d4d8e3;
 }
 
-#carousel .carousel__btn .carousel__container .carousel__dots .carousel__item:nth-child(1) {
+#carousel .carousel__btn .carousel__containdots .carousel__dots .carousel__item:nth-child(1) {
   background-color: #b00006;
 }
 
 #contact {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 #contact .contact__container {
